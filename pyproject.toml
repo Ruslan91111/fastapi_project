@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-project"
+version = "0.1.0"
+description = ""
+authors = ["Ruslan91111 <ruslan_ru911@mail.ru>"]
+readme = "README.md"
+packages = [{include = "fastapi_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.97.0"
+uvicorn = "^0.22.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.2"
+httpx = "^0.24.1"
+mypy = "^1.3.0"
+pylint = "^2.17.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
