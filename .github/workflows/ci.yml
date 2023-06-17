@@ -45,7 +45,6 @@ jobs:
           
   build:
     runs-on: ubuntu-latest
-    if: strtsWith(github.ref, 'ref/tags/'
 
     needs: [run_tests]
 
